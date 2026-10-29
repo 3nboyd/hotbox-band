@@ -1,22 +1,21 @@
-# NBZ event links and song requests
+# Hotbox band links
 
-A static landing page for event QR codes, with social links, payment links, contact information, and a separate song-request page.
+Hotbox's event link page, adapted from [bookingspage](https://github.com/3nboyd/bookingspage). It preserves the original layout, purple styling, payment destinations, and booking contact, with the band's photo and Instagram.
+
+- Website: https://3nboyd.github.io/hotbox-band/
+- Instagram: https://www.instagram.com/hotboxtheband/
 
 ## Local preview
 
 ```sh
-git clone https://github.com/3nboyd/bookingspage.git
-cd bookingspage
 python3 -m http.server 8000
 ```
 
-Open [localhost:8000](http://localhost:8000) for the landing page or [localhost:8000/requests/](http://localhost:8000/requests/) for song requests.
+Open http://localhost:8000. The site uses plain HTML, CSS, and JavaScript with no build step. GitHub Pages serves `main` from the repository root.
 
-## Files and hosting
+## Updates
 
-- `index.html`, `styles.css`, and `script.js` provide the landing page and shared interactions.
-- `requests/index.html` contains the song-request form.
-- `site-config.js` sets the Apps Script endpoint used by the form.
-- `google-apps-script/` contains the separate Google Sheets and notification backend.
-
-The site can be served by a static host, including GitHub Pages. Song requests require a deployed Apps Script web app; follow the [backend setup guide](google-apps-script/README.md) before testing submissions. The static preview does not create a Google Sheet or deploy that backend.
+- Edit `index.html` to change links, text, or the booking email.
+- Edit `styles.css` to change styling and background blur.
+- Replace `background.jpg` to change the band photo.
+- `script.js` handles revealing and copying the booking email.

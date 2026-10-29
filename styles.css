@@ -230,38 +230,6 @@ body::after {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
 }
 
-.ghost-btn .contact-email {
-  text-decoration: underline;
-}
-
-.ghost-btn.is-copied {
-  color: #ffffff;
-  background: linear-gradient(120deg, var(--accent), var(--accent-2));
-}
-
-.ghost-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 6px;
-  padding: 14px 16px;
-  background: transparent;
-  color: var(--accent);
-  border: 1px solid rgba(192, 119, 255, 0.6);
-  border-radius: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
-  width: 100%;
-  justify-content: center;
-}
-
-.ghost-btn:hover {
-  transform: translateY(-1px);
-  background: rgba(192, 119, 255, 0.08);
-}
-
 @media (min-width: 720px) {
   .hero__content {
     padding: 24px 12px;
